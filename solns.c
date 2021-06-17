@@ -50,21 +50,20 @@ int v= 0, c= 0;
 
    return v;
 }
-int factors(int n, int r[])
-{
+
+int factors(int n, int r[]){
   int p[] ={2,3,5,7,9,11,13,17,19};
-  int k =0 , j=0;
+  int sum =0 , j=0;
  for(int i=0;i<9;i++)
  {
-     while(n%a[i] ==0)
-  { r[j]=a[i];
-  n=n/a[i];
-   k+=1;
-   j++;
-      
+    while(n%p[i] ==0){
+       r[j]=p[i];
+        n=n/p[i];
+        sum +=1;
+        j++;
   }
      
  }
-  return k;
-}	
+  return sum;
+}
 
