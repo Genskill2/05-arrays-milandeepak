@@ -50,3 +50,20 @@ int v= 0, c= 0;
 
    return v;
 }
+int factors(int n, int arr[])
+{
+  int a[] ={2,3,5,7,9,11,13,17,19};
+  int k =0 , j=0;
+ for(int i=0;i<9;i++)
+ {
+     while(n%a[i] ==0)
+  { arr[j]=p[i];
+  n=n/p[i];
+   k +=1;
+   j++;
+      
+  }
+     
+ }
+  return sum;
+}
